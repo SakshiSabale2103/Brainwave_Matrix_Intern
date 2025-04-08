@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - NGO Management System</title>
+  <style type="text/css">
+    .body {
+      min-height: 100vh;
+      width: 100%;
+      background-image: url("images/back3.jpg");
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .container {
+      width: 300px;
+      min-height: 350px;
+      background: whitesmoke;
+      margin: 50px auto;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+      padding: 40px 30px;
+    }
+
+    .login-text {
+      color: #111;
+      font-weight: 500;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      display: block;
+      text-transform: capitalize;
+    }
+
+    .input-group {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 25px;
+    }
+
+    .input-group input {
+      width: 100%;
+      height: 50px;
+      border: 2px solid #e7e7e7;
+      padding: 15px 20px;
+      font-size: 1rem;
+      border-radius: 30px;
+      background: transparent;
+      outline: none;
+      transition: .3s;
+    }
+
+    .input-group input:focus,
+    .input-group input:valid {
+      border-color: brown;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      text-align: center;
+      border: none;
+      background: brown;
+      outline: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      color: #FFF;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px);
+      background: darkred;
+    }
+
+    .login-register-text {
+      color: #111;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .login-register-text a {
+      text-decoration: none;
+      color: brown;
+    }
+
+    nav img {
+      display: block;
+      margin: 20px auto;
+    }
+
+    @media (max-width: 430px) {
+      .container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="body">
+    <nav>
+      <a href="register.html"><img src="images/logo2.png" height="100" width="150" alt="Logo"></a>
+    </nav>
+    <div class="container">
+      <form action="wel.html" method="POST" class="login-email">
+        <p class="login-text">Login</p>
+        <div class="input-group">
+          <input type="email" placeholder="Email" name="email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" name="password" required>
+        </div>
+        <div class="input-group">
+          <button name="submit" class="btn">Login</button>
+        </div>
+        <p class="login-register-text">Don't have an account? <a href="register.html">Register Here</a>.</p>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+  background-color: rgba(145, 91, 68, 0.7);
+
+}
+
+.header{
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1000px;
+  text-align: center;
+}
+
+nav{
+    background-color: rgba(155, 91, 68, 0.7);
+    height: 80px;
+    display: flex;
+    padding: 3px 4px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px 3px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li a.active , .nav-links ul li a:hover{
+
+    background: rgb(141, 39, 18);
+    transition: .5s;
+    padding: 10px 12px;
+    border-radius: 3px;
+}
+
+
+
+.sub-menu{
+    display: none;
+
+}
+
+.nav-links ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: rgb(141, 39, 18);
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+
+.nav-links ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.nav-links ul li:hover .sub-menu ul li{
+      width: 80px;
+      padding: 10px;
+      border-bottom: 1px double #fff;
+      background: transparent;
+      border-radius: 0;
+      text-align: left;
+}
+
+.nav-links ul li:hover .sub-menu ul li:last-child
+{
+    border-bottom: none;
+
+}
+
+.text-box{
+    border-radius: 5px;
+    color: rgb(244, 239, 239);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h2{
+    font-size: 60px;
+    font-size: 'Poppins', sans-serif;
+}
+
+.cols{
+  flex-basis: 50%;
+  min-width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(10%,10%);
+  background-size: cover;
+}
+
+.card{
+  width: 80%;
+  display: flex;
+  background-color: gray;
+  margin: 20px 0;
+  border-radius: 6px;
+  overflow:hidden;
+  height: 200px;
+}
+.card:hover{
+  background-color: rgba(159, 91, 68, 0.7);
+  transition: .5s;
+  border-radius: 1px;
+}
+.card a{
+  color: #8b3626;
+}
+.card-images{
+  position:relative;
+  width: 200px;
+  margin-right: 20px;
+  background-size: cover;
+}
+
+.card-images img{
+}
+
+.pic1{
+  background-image: url("images/corg1.jpg")
+}
+.pic2{
+  background-image: url("images/corg2.jpg")
+}
+.pic3{
+  background-image: url("images/corg3.jpg")
+}
+
+.pic4{
+  background-image: url("images/worg3.jpg")
+}
+.pic5{
+  background-image: url("images/worg2.jpg")
+}
+.pic6{
+  background-image: url("images/eorg1.jpg")
+}
+.pic7{
+  background-image: url("images/eorg2.jpg")
+}
+.pic8{
+  background-image: url("images/eorg3.jpg")
+}
+.card h3{
+
+}
+.sav{
+  background-size: cover;
+}
+.sav h3{
+  font-size: 18px;
+  font-size: 'Josefin Sans', sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%,20%);
+  width: 40%;
+  background-size: cover;
+}
+
+.sav p{
+  margin: 0px 0 20px;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(243, 220, 220);
+  top: 50%;
+  left: 50%;
+  transform: translate(10%,20%);
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Form</title>
+  <link href="donationstyle.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+  <img src="images/logo2.png" height="100" width="150" alt="Logo">
+
+  <div class="wrapper">
+    <h2>Donation Form</h2>
+    <form method="POST" action="#">
+      <h4>Account</h4>
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" name="fullname" placeholder="Full Name" required class="name">
+          <i class="fa fa-user icon"></i>
+        </div>
+        <div class="input-box">
+          <input type="text" name="lastname" placeholder="Last Name" required class="name">
+          <i class="fa fa-user icon"></i>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          <input type="email" name="emailid" placeholder="Email Address" required class="name">
+          <i class="fa fa-envelope icon"></i>
+        </div>
+        <div class="input-box">
+          <input type="text" name="address" placeholder="Address" required class="name">
+          <i class="fa fa-map icon"></i>
+        </div>
+      </div>
+
+      <h4>Associate Partners</h4>
+      <div class="input-group">
+        <div class="input-box">
+          <label>Women-Empower</label>
+          <select name="wngo">
+            <option>ngo1</option>
+            <option>ngo2</option>
+            <option>ngo3</option>
+          </select>
+          <i class="fa fa-user icon"></i>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          <label>Children</label>
+          <select name="cngo">
+            <option>ngo1</option>
+            <option>ngo2</option>
+            <option>ngo3</option>
+          </select>
+          <i class="fa fa-user icon"></i>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          <label>Elders</label>
+          <select name="engo">
+            <option>ngo1</option>
+            <option>ngo2</option>
+            <option>ngo3</option>
+          </select>
+          <i class="fa fa-user icon"></i>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          <h4>Date of Birth</h4>
+          <input type="text" name="DOB_day" placeholder="DD" class="dob">
+          <input type="text" name="DOB_month" placeholder="MM" class="dob">
+          <input type="text" name="DOB_year" placeholder="YYYY" class="dob">
+        </div>
+
+        <div class="input-box">
+          <h4>Gender</h4>
+          <input type="radio" id="b1" name="gender" checked class="radio">
+          <label for="b1">Male</label>
+          <input type="radio" id="b2" name="gender" class="radio">
+          <label for="b2">Female</label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          <h4>Payment Details</h4>
+          <input type="radio" name="pay" id="bc1" checked class="radio">
+          <label for="bc1"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
+          <input type="radio" name="pay" id="bc2" class="radio">
+          <label for="bc2"><span><i class="fa fa-cc-paypal"></i> Paypal</span></label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          <input type="tel" name="cardno" placeholder="Card Number" required class="name">
+          <i class="fa fa-credit-card icon"></i>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          <input type="tel" name="cardcvc" placeholder="Card CVC" required class="name">
+          <i class="fa fa-user icon"></i>
+        </div>
+
+        <div class="input-box">
+          <select name="day">
+            <option>24 May</option>
+            <option>25 May</option>
+            <option>26 May</option>
+          </select>
+          <select name="year">
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          <button type="submit">PAY NOW</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
